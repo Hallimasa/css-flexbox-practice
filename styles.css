@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(45,45,45);
+}
+p {
+    font-size: 1.5em;
+    color: white;
+    margin: 15px;
+}
+
+.float-header-menu {
+    display:flex;
+    background-color: rgb(40,40,60);
+    flex:auto;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    font-size: 2em;
+    gap: 30px;
+}
+
+.float-header-menu-submenu {
+    display: flex;
+}
+
+.float-header-menu-title {
+    align-self: center;
+    font-size: 1em;
+    color:white;
+}
