@@ -35,6 +35,13 @@
         <h2>display:inline-flex</h2>
         <p>The is no effects on flex items container, it's the same as <mark> display:flex</mark> but the difference is the block container is considered inline-level now. You <mark>cannot</mark> display flex items inline; otherwise you don't actually have a flex layout. :</p>
         <img src="./images/flexbox_display_inline_flex.png" alt="display-inline-flex-example" title="display-inline-flex-example" width="82%" height="auto">
+        <h2><mark>Flexbox Flexible Widths</mark></h2>
+        <p>The <mark>flex</mark> property defines the width of individual items in a flex containet, it allows them to have flexible widths. It works as a weight that tells the flex container how to distribute extra space to each item. For example, an item with a <mark>flex</mark> value of <mark>2</mark> will grow twice as fast as items with the default value of <mark>1</mark>.</p>
+        <img src="./images/flexbox_flexible_widths.png" alt="flexbox_flexible_widths" title="flexbox_flexible_widths" width="82%" height="auto">
+        <h2><mark>Static Item Widths</mark></h2>
+        <p>We can even mix-and-match flexible boxes with fixed-width ones. <mark>flex: initial</mark> falss back to the item's explicit <mark>width </mark> property. This let us combine Static and flexible boxes in complex ways.</p>
+        <img src="./images/flexbox_static_item_widths.png" alt="flexbox_static_item_widths" title="flexbox_static_item_widths" width="82%" height="auto">
+        <p>Without that <mark>flex:initial</mark> line, the <mark>flex: 1;</mark> declaration would be inherited from the <mark>.footer-item</mark> rule, causing the <mark> width</mark> properties to be ignored. <mark>initial</mark> fixes this, and we get a flexible layout that also contains fixed-width items.</p>
     </div>
 </body>
 </html>

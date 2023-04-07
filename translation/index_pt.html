@@ -35,6 +35,13 @@
         <h2>display:inline-flex</h2>
         <p>Não há efeitos no contêiner de itens flexíveis, é o mesmo que <mark> display:flex</mark>, mas a diferença é que o contêiner de bloco é considerado nível inline agora. Você <mark>não pode</mark> exibir flex items embutidos; caso contrário, você não terá um layout flexível. :</p>
         <img src="../images/flexbox_display_inline_flex.png" alt="display-inline-flex-example" title="display-inline-flex-example" width="82%" height="auto">
+        <h2><mark>Larguras Flexíveis</mark></h2>
+        <p>A propriedade <mark>flex</mark> define a largura de itens individuais em um flex container, permitindo que eles tenham larguras flexíveis. Ele funciona como um peso que informa ao flex container como distribuir o espaço extra para cada item. Por exemplo, um item com um valor <mark>flex</mark> de <mark>2</mark> crescerá duas vezes mais rápido que itens com o valor padrão de <mark>1</mark>.</p>
+        <img src="../images/flexbox_flexible_widths.png" alt="flexbox_flexible_widths" title="flexbox_flexible_widths" width="82%" height="auto">
+        <h2><mark>Largura Estática de Itens</mark></h2>
+        <p>Podemos até misturar e combinar caixas flexíveis com outras de largura fixa. <mark>flex: initial</mark> retorna para a propriedade <mark>width</mark> explícita do item. Isso nos permite combinar caixas estáticas e flexíveis de maneiras complexas.</p>
+        <img src="../images/flexbox_static_item_widths.png" alt="flexbox_static_item_widths" title="flexbox_static_item_widths" width="82%" height="auto">
+        <p>Sem essa linha <mark>flex:initial</mark>, a declaração <mark>flex: 1;</mark> seria herdada da regra <mark>.footer-item</mark>, causando com que as propriedades  de <mark>width</mark> sejam ignoradas. <mark>initial</mark> corrige isso e obtemos um layout flexível que também contém itens de largura fixa.</p>
     </div>
 </body>
 </html>
